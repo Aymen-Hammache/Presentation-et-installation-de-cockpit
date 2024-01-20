@@ -1,4 +1,4 @@
-### **Introduction**
+# **Introduction**
 
 Ubuntu Server 22.04.03 s'enrichit d'une expérience de gestion système révolutionnaire grâce à l'intégration du programme Cockpit. Conçu pour simplifier la surveillance et la gestion des serveurs, Cockpit offre une interface web simple et intuitif, offrant aux administrateurs une vue d'ensemble de leur infrastructure.
 
@@ -23,7 +23,7 @@ En somme, Cockpit redéfinit la gestion des serveurs Ubuntu en rendant la config
 
 Dans ce tutoriel, nous allons vous montrer comment installer et utiliser ce merveilleux logiciel de gestion de serveur sur votre serveur ubuntu 22.04.03 LTS.
 
-### **Installation et présentation de cockpit**
+# **Installation et présentation de cockpit**
 
 Pour installer cockpit, rien de plus simple ! Vous avez juste à effectuer la commande suivante afin
 d’installer le paquet sur votre serveur avec la commande suivante:
@@ -76,7 +76,7 @@ L’interface web est divisé en deux parties, la partie « système » et la pa
 
  **Terminal** : Permet d’utiliser le terminal linux depuis l’interface web.
 
-### **Utiliser Cockpit depuis l'extérieur**
+# **Utiliser Cockpit depuis l'extérieur**
 
 Maintenant que vous connaissez cockpit, je vais vous montrer comment y accéder depuis une machine qui n’est pas sur votre réseau (un smartphone en 4G par exemple). Il faut juste autoriser la redirection vers le port 9090. **ATTENTION** : selon le routeur c'est une procédure différente qu'il faudra effectuer, ici on va le faire sur une FreeBox. Vous trouverez un tuto pour chaque marque de routeur en annexe.
 Rendez vous sur le site de la box, généralement http://192.168.1.254, allez dans « paramètre de la box » puis dans « mode avancé » ensuite dans « gestion des ports » et pour finir « ajouter une redirection de port » veuillez suivre la capture d’écran ci-dessous afin de configurer votre redirection de port :
@@ -85,7 +85,7 @@ Rendez vous sur le site de la box, généralement http://192.168.1.254, allez da
 
 Faites ceci pour le protocole TCP et UDP, en ce qui me concerne, j’ai dû le faire en deux fois car sur FreeBox, on ne peut pas mettre les deux protocoles pour la même règle.
 
-### **Testons!**
+# **Testons!**
 
 Vous pouvez tester facilement l’accès à cockpit depuis l’extérieur ! Il vous suffit d’un smartphone pour créer un point d’accès (un forfait mobile disposant de la 4G est nécessaire) et de votre PC !
 Rendez vous sur votre smartphone, activez les données mobiles et le partage de connexion, modifiez le mode de passe si nécessaire, ces paramètres sont, en général, situer dans l’onglet «données cellulaires» ou «données mobiles» de votre smartphone.
@@ -104,15 +104,16 @@ Entrez les identifiants de votre serveur et vous y êtes ! Vous pouvez accéder 
 
 ![image](Images/Interface2.png)
 
-### **Conclusion**
+# **Conclusion**
 
 En conclusion, notre démarche a abouti à la mise en place réussie d'un serveur doté d'une interface web appelée "cockpit". Cette interface offre la possibilité d'administrer le serveur à distance, une fonctionnalité particulièrement utile lorsque l'accès direct au serveur n'est pas disponible.
 
 De plus, nous avons mis en œuvre une redirection de port au niveau du routeur, permettant ainsi un accès sécurisé à l'interface cockpit depuis l'extérieur du réseau local. Cette configuration optimisée offre une gestion à distance efficace, tout en garantissant la sécurité des opérations grâce à la redirection de port sur le routeur. En somme, notre solution offre une flexibilité et une accessibilité accrues pour la gestion du serveur, adaptée aux besoins des utilisateurs confrontés à des contraintes d'accès physique.
 
-### **Annexe**
+# **Annexe**
 
 Tutoriels pour les redirection de port :
+
 SFR: https://shorturl.at/gMO23
 
 Bouygues Telecom: https://shorturl.at/gmzJ8
